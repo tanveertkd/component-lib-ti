@@ -1,0 +1,40 @@
+/* 
+    Avatar sizes  
+    small: 24px*24px
+    medium: 32px*32px
+    normal: 48px*48px
+    large: 34px*34px
+*/
+
+.spacer {
+    margin: 0.5rem 1rem;
+}
+
+.avatar {
+    height: 48px;
+    width: 48px;
+}
+
+.avatar-sm {
+    height: 24px;
+    width: 24px;
+}
+
+.avatar-md {
+    height: 32px;
+    width: 32px;
+}
+
+.avatar-lg {
+    height: 64px;
+    width: 64px;
+}
+
+.curved-edge {
+    border-radius: 0.625rem;
+}
+
+.avatar-round {
+    border-radius: 50%;
+}
+/* 64 48 32 24 */

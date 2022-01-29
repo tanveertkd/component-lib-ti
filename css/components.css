@@ -1,0 +1,35 @@
+@import url('./typography.css');
+@import url('./colors.css');
+
+html, body {
+    background-color: var(--primary-bg);
+}
+
+.primary-container {
+    display: flex;
+    margin: 3rem;
+}
+
+.secondary-container {
+    margin: 3rem;
+}
+
+.secondary-container-body {
+    margin: 1.5rem;
+}
+
+.secondary-content {
+    margin: 5rem 0.5rem;
+}
+
+.secondary-content-sample-code {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.send-to-next {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}

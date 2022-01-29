@@ -1,0 +1,17 @@
+nav {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+nav a {
+    color: var(--color-hover-grey);
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
