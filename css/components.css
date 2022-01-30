@@ -1,5 +1,7 @@
 @import url('./typography.css');
 @import url('./colors.css');
+@import url('../components/avatar/avatar.css');
+@import url('../components/alert/alert.css');
 
 html, body {
     background-color: var(--primary-bg);
@@ -26,6 +28,7 @@ html, body {
 .secondary-body-size-list li{
     display: flex;
     justify-content: space-between;
+    padding: 0.2rem;
 }
 
 .secondary-content {
@@ -56,7 +59,50 @@ html, body {
     padding-top: 3rem;
 }
 
+.send-to-next a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
 /* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .primary-container {
+        margin: 1rem;
+    }
+
+    .sidebar-nav{
+        display: none;
+    }
+
+    .secondary-container {
+        margin: 1rem;
+    }
+    
+    .secondary-container-body {
+        margin: 0.5rem;
+    }
+
+    .secondary-content {
+        margin: 2.5rem 0.25rem;
+    }
+
+    .secondary-content-sample-code {
+        padding: 0;
+    }
+    
+    .secondary-content-sample-code iframe {
+        width: 650px; 
+        height: 250px; 
+        border: 0; 
+        transform: scale(1); 
+        overflow: hidden;
+    }
+
+    .send-to-next {
+        padding-top: 1rem;
+    }
+}
 
 @media screen and (max-width: 600px) {
 
@@ -91,44 +137,6 @@ html, body {
     
     .secondary-content-sample-code iframe {
         width: 350px; 
-        height: 250px; 
-        border: 0; 
-        transform: scale(1); 
-        overflow: hidden;
-    }
-
-    .send-to-next {
-        padding-top: 1rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .primary-container {
-        margin: 1rem;
-    }
-
-    .sidebar-nav{
-        display: none;
-    }
-
-    .secondary-container {
-        margin: 1rem;
-    }
-    
-    .secondary-container-body {
-        margin: 0.5rem;
-    }
-
-    .secondary-content {
-        margin: 2.5rem 0.25rem;
-    }
-
-    .secondary-content-sample-code {
-        padding: 0;
-    }
-    
-    .secondary-content-sample-code iframe {
-        width: 650px; 
         height: 250px; 
         border: 0; 
         transform: scale(1); 
