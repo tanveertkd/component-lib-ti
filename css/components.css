@@ -39,6 +39,16 @@ html, body {
     font-size: 1.4rem;
 }
 
+.container-av {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.alert-container {
+    width: 50%;
+}
+
 .secondary-content-sample-code {
     display: flex;
     justify-content: center;
@@ -85,6 +95,10 @@ html, body {
 
     .secondary-content {
         margin: 2.5rem 0.25rem;
+    }
+
+    .alert-container {
+        width: 100%;
     }
 
     .secondary-content-sample-code {
