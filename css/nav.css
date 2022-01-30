@@ -1,14 +1,15 @@
 nav {
-    position: fixed;
+    /* position: fixed;
     top: 1rem;
-    left: 1rem;
+    left: 1rem; */
+    display: flex;
 }
 
 nav a {
     color: var(--color-hover-grey);
     text-decoration: none;
-    padding: 0.5rem;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 nav a:hover {

@@ -7,7 +7,8 @@ html, body {
 
 .primary-container {
     display: flex;
-    margin: 3rem;
+    flex-wrap: wrap;
+    margin: 2rem;
 }
 
 .secondary-container {
@@ -18,8 +19,21 @@ html, body {
     margin: 1.5rem;
 }
 
+.secondary-body-size-list {
+    width: 12.5rem;
+}
+
+.secondary-body-size-list li{
+    display: flex;
+    justify-content: space-between;
+}
+
 .secondary-content {
     margin: 5rem 0.5rem;
+}
+
+.secondary-content h3 {
+    font-size: 1.4rem;
 }
 
 .secondary-content-sample-code {
@@ -28,8 +42,100 @@ html, body {
     padding: 1rem;
 }
 
+.secondary-content-sample-code iframe {
+    width: 1000px; 
+    height: 250px; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
+
 .send-to-next {
     display: flex;
     justify-content: space-between;
     padding-top: 3rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .primary-container {
+        margin: 0.5rem;
+    }
+
+    .sidebar-nav{
+        display: none;
+    }
+
+    .secondary-container {
+        margin: 1rem;
+    }
+    
+    .secondary-container-body {
+        margin: 0.5rem;
+    }
+
+    .secondary-content {
+        margin: 2.5rem 0.25rem;
+    }
+
+    .secondary-content-sample-code {
+        padding: 0;
+    }
+    
+    .secondary-content-sample-code iframe {
+        width: 350px; 
+        height: 250px; 
+        border: 0; 
+        transform: scale(1); 
+        overflow: hidden;
+    }
+
+    .send-to-next {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .primary-container {
+        margin: 1rem;
+    }
+
+    .sidebar-nav{
+        display: none;
+    }
+
+    .secondary-container {
+        margin: 1rem;
+    }
+    
+    .secondary-container-body {
+        margin: 0.5rem;
+    }
+
+    .secondary-content {
+        margin: 2.5rem 0.25rem;
+    }
+
+    .secondary-content-sample-code {
+        padding: 0;
+    }
+    
+    .secondary-content-sample-code iframe {
+        width: 650px; 
+        height: 250px; 
+        border: 0; 
+        transform: scale(1); 
+        overflow: hidden;
+    }
+
+    .send-to-next {
+        padding-top: 1rem;
+    }
 }

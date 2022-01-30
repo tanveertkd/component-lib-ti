@@ -3,7 +3,7 @@
     small: 24px*24px
     medium: 32px*32px
     normal: 48px*48px
-    large: 34px*34px
+    large: 64px*64px
 */
 
 .spacer {
@@ -37,4 +37,3 @@
 .avatar-round {
     border-radius: 50%;
 }
-/* 64 48 32 24 */

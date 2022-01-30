@@ -7,8 +7,8 @@
     <title>TI | Avatar</title>
 
     <link rel="stylesheet" href="../../css/nav.css">
-    <link rel="stylesheet" href="../../css/components.css">
     <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/components.css">
     <link rel="stylesheet" href="avatar.css" />
 </head>
 <body>
@@ -33,7 +33,7 @@
                         <a href="../alert/alert.html">Alert</a>
                     </li>
                     <li>
-                        <a href="../badge/badge.html">Alert</a>
+                        <a href="../badge/badge.html">Badge</a>
                     </li>
                     <li>
                         <a href="../button/alert.html">Button</a>
@@ -42,10 +42,10 @@
                         <a href="../card/card.html">Card</a>
                     </li>
                     <li>
-                        <a href="../image/image.html">Alert</a>
+                        <a href="../image/image.html">Image</a>
                     </li>
                     <li>
-                        <a href="../input/input.html">Alert</a>
+                        <a href="../input/input.html">Input</a>
                     </li>
                 </ul>
             </div>
@@ -54,10 +54,21 @@
         <!-- Avater doc body -->
         <div class="secondary-container-body">
             <div class="secondary-body-head">
-                <h2>Avatar</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deleniti incidunt, possimus aspernatur neque reiciendis ea, nostrum aliquid ducimus excepturi veniam veritatis, et fugiat? Nesciunt magni non quis optio sapiente.
-                Enim quas alias voluptatum iure, perspiciatis doloremque quos recusandae quae, obcaecati fugit inventore error repellat vero. Explicabo in accusamus veritatis voluptatibus, molestias ea fugit incidunt officia vel quam illum quisquam.</p>
+                <h1>Avatar</h1>
+                <p>
+                    Avatars are usually used as or in place of profile pictures across websites. 
+                    TI offers a couple of varieties of avatars in four different sizes.
+                    <ul class="secondary-body-size-list">
+                        <li>Small - <span>24px*24px</span></li>
+                        <li>Medium - <span>32px*32px</span></li>
+                        <li>Normal - <span>48px*48px</span></li>
+                        <li>Large - <span>64px*64px</span></li>
+                    </ul>
+                    You can style your avatars in the following ways.
+                </p>
             </div>
+
+            <hr>
 
             <div class="secondary-content">
                 <h3>Square Avatar</h3>
@@ -67,11 +78,13 @@
                     <img src="../../assets/avatar/avatar_3.svg" alt="avatar std" class="avatar-md spacer"/>
                     <img src="../../assets/avatar/avatar_4.svg" alt="avatar std" class="avatar-sm spacer"/>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore eveniet sequi, minima nam sapiente architecto, aspernatur repellat, voluptatum tempora blanditiis. Impedit ab odit laudantium ipsam illo molestiae soluta reiciendis!</p>
+                <p>
+                    To use the square avatars, just add class <code>avatar</code> to your <code>img</code> tag.
+                    Please refer to the code snippet below for full usage information.
+                </p>
                 <div class="secondary-content-sample-code">
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-lg%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-md%2522%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-sm%2522%252F%253E"
-                        style="width: 1000px; height: 250px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
@@ -87,11 +100,13 @@
                     <img src="../../assets/avatar/avatar_3.svg" alt="avatar std" class="avatar-md curved-edge spacer"/>
                     <img src="../../assets/avatar/avatar_4.svg" alt="avatar std" class="avatar-sm curved-edge spacer"/>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore eveniet sequi, minima nam sapiente architecto, aspernatur repellat, voluptatum tempora blanditiis. Impedit ab odit laudantium ipsam illo molestiae soluta reiciendis!</p>
+                <p>
+                    To add curved edges to your avatars, add class <code>curved-edge</code> to your existing avatar class.
+                    Please refer to the code snippet below for full usage information.
+                </p>
                 <div class="secondary-content-sample-code">
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-lg%2520curved-edge%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520curved-edge%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-md%2520curved-edge%2522%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-sm%2520curved-edge%2522%252F%253E"
-                        style="width: 1000px; height: 250px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
@@ -107,11 +122,13 @@
                     <img src="../../assets/avatar/avatar_3.svg" alt="avatar std" class="avatar-md avatar-round spacer"/>
                     <img src="../../assets/avatar/avatar_4.svg" alt="avatar std" class="avatar-sm avatar-round spacer"/>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore eveniet sequi, minima nam sapiente architecto, aspernatur repellat, voluptatum tempora blanditiis. Impedit ab odit laudantium ipsam illo molestiae soluta reiciendis!</p>
+                <p>
+                    To start using circular avatars, add class <code>avatar-round</code> to your existing avatar class.
+                    Please refer to the code snippet below for full usage information.
+                </p>
                 <div class="secondary-content-sample-code">
                     <iframe
                         src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-lg%2520avatar-round%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-round%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-md%2520avatar-round%2522%252F%253E%250A%253Cimg%2520src%253D%2522.%252Flink-to-asset%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar-sm%2520avatar-round%2522%252F%253E"
-                        style="width: 1000px; height: 250px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
