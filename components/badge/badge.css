@@ -1,0 +1,41 @@
+.badge {
+    position: relative;
+}
+
+.badge > div {
+    position: absolute;
+    background-color: var(--color-highlight-orange);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-bg);
+    right: 20%;
+    bottom: 15%;
+}
+
+.badge .online {
+    background-color: var(--color-alert-success);
+}
+
+.badge .offline {
+    background-color: var(--color-offline);
+}
+
+.badge .idle {
+    background-color: var(--color-idle);
+}
+
+.badge .dnd {
+    background-color: var(--color-highlight-orange);
+}
+
+.badge .badge-info {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: var(--primary-bg);
+    font-size: 0.8rem;
+}

@@ -2,6 +2,7 @@
 @import url('./colors.css');
 @import url('../components/avatar/avatar.css');
 @import url('../components/alert/alert.css');
+@import url('../components/badge/badge.css');
 
 html, body {
     background-color: var(--primary-bg);
@@ -130,8 +131,12 @@ html, body {
         padding: 0;
     }
 
-    .primary-container {
+    nav {
         margin: 0.5rem;
+    }
+
+    .primary-container {
+        margin: 0;
     }
 
     .sidebar-nav{
