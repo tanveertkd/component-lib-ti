@@ -3,6 +3,7 @@
 @import url('../components/avatar/avatar.css');
 @import url('../components/alert/alert.css');
 @import url('../components/badge/badge.css');
+@import url('../components/button/button.css');
 
 html, body {
     background-color: var(--primary-bg);
@@ -103,6 +104,18 @@ html, body {
         margin: 2.5rem 0.25rem;
     }
 
+    .container-button {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .container-button button {
+        margin: 0.5rem;
+    }
+
     .alert-container {
         width: 100%;
     }
@@ -153,6 +166,18 @@ html, body {
 
     .secondary-content {
         margin: 2.5rem 0.25rem;
+    }
+
+    .container-button {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container-button button {
+        margin: 0.5rem;
     }
 
     .secondary-content-sample-code {

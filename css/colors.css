@@ -15,4 +15,16 @@
     /* extra colors for badges */
     --color-offline: #969696;
     --color-idle: #ffc400;
+
+    /* Button colors */
+    --color-button-default: #e7e7e7;
+    --color-button-solid-default: #616161;
+    --color-button-solid-primary: #00695c;
+    --color-button-solid-primary-hover: #23cfbb;
+    --color-button-solid-secondary: #80cbc4;
+    --color-button-solid-secondary-hover: #288178;
+    --color-button-solid-success: #2e7d32;
+    --color-button-solid-success-hover: #34a539;
+    --color-button-solid-error: #d50000;
+    --color-button-solid-error-hover: #da3131;
 }
