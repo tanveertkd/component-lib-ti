@@ -14,11 +14,16 @@ html, body {
 }
 
 .secondary-container {
+    display: flex;
     margin: 3rem;
 }
 
 .secondary-container-body {
-    margin: 1.5rem;
+    margin: auto 1.5rem;
+}
+
+.secondary-body-head h1 {
+    margin: 0;
 }
 
 .secondary-body-size-list {
