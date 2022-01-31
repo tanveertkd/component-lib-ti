@@ -1,0 +1,168 @@
+@import url('./typography.css');
+@import url('./colors.css');
+@import url('../components/avatar/avatar.css');
+@import url('../components/alert/alert.css');
+
+html, body {
+    background-color: var(--primary-bg);
+}
+
+.primary-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.secondary-container {
+    display: flex;
+    margin: 3rem;
+}
+
+.secondary-container-body {
+    margin: auto 1.5rem;
+}
+
+.secondary-body-head h1 {
+    margin: 0;
+}
+
+.secondary-body-size-list {
+    width: 12.5rem;
+}
+
+.secondary-body-size-list li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+}
+
+.secondary-content {
+    margin: 5rem 0.5rem;
+}
+
+.secondary-content h3 {
+    font-size: 1.4rem;
+}
+
+.container-av {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.alert-container {
+    width: 50%;
+}
+
+.secondary-content-sample-code {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.secondary-content-sample-code iframe {
+    width: 1000px; 
+    height: 250px; 
+    border:0; 
+    transform: scale(1); 
+    overflow:hidden;
+}
+
+.send-to-next {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.send-to-next a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .primary-container {
+        margin: 1rem;
+    }
+
+    .sidebar-nav{
+        display: none;
+    }
+
+    .secondary-container {
+        margin: 1rem;
+    }
+    
+    .secondary-container-body {
+        margin: 0.5rem;
+    }
+
+    .secondary-content {
+        margin: 2.5rem 0.25rem;
+    }
+
+    .alert-container {
+        width: 100%;
+    }
+
+    .secondary-content-sample-code {
+        padding: 0;
+    }
+    
+    .secondary-content-sample-code iframe {
+        width: 650px; 
+        height: 250px; 
+        border: 0; 
+        transform: scale(1); 
+        overflow: hidden;
+    }
+
+    .send-to-next {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .primary-container {
+        margin: 0.5rem;
+    }
+
+    .sidebar-nav{
+        display: none;
+    }
+
+    .secondary-container {
+        margin: 1rem;
+    }
+    
+    .secondary-container-body {
+        margin: 0.5rem;
+    }
+
+    .secondary-content {
+        margin: 2.5rem 0.25rem;
+    }
+
+    .secondary-content-sample-code {
+        padding: 0;
+    }
+    
+    .secondary-content-sample-code iframe {
+        width: 350px; 
+        height: 250px; 
+        border: 0; 
+        transform: scale(1); 
+        overflow: hidden;
+    }
+
+    .send-to-next {
+        padding-top: 1rem;
+    }
+}

@@ -6,4 +6,10 @@
     --color-hover-light-grey: #dbd7d7;
     --color-avatar-bg: #969696;
     --color-highlight-orange: #ff3d00;
+
+    /* alert colors */
+    --color-alert-primary: #2196f3;
+    --color-alert-success: #43a047;
+    --color-alert-warning: #ffab00;
+    --color-alert-error: #ff5252;
 }

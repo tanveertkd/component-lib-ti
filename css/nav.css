@@ -1,0 +1,18 @@
+nav {
+    /* position: fixed;
+    top: 1rem;
+    left: 1rem; */
+    display: flex;
+}
+
+nav a {
+    color: var(--color-hover-grey);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
