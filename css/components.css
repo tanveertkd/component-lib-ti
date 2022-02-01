@@ -166,6 +166,40 @@ html, body {
         width: 100%;
     }
 
+    .card {
+        display: flex;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .card-img-horizontal {
+        align-items: center;
+        padding-left: 0.5;
+    }
+
+    .card-img-horizontal .card-buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-img-horizontal .card-buttons button {
+        margin-bottom: 0.25rem;
+    }
+
+    .card-img-horizontal .card-head, .card-img-horizontal .card-body {
+        margin: 0;
+        padding-bottom: 0.25rem;
+    }
+
+    .card-image {
+        width: 100px;
+        height: 70px;
+        /* width: 30%;
+        height: 30%; */
+    }
+
     .secondary-content-sample-code {
         padding: 0;
     }
