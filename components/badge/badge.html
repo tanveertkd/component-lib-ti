@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI | Badge</title>
+
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div class="primary-container">
+        <nav>
+            <a href="../../index.html">TI</a>
+        </nav>
+
+        <div class="secondary-container">
+            
+            <!-- Components navigation -->
+            <div class="sidebar-nav">
+                <div class="sidebar-nav-header">
+                    <a href="./avatar.html">Components</a>
+                </div>
+                
+                <ul class="sidebar-nav-items">
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="../alert/alert.html">Alert</a>
+                    </li>
+                    <li class="active">
+                        <a href="../badge/badge.html">Badge</a>
+                    </li>
+                    <li>
+                        <a href="../button/button.html">Button</a>
+                    </li>
+                    <li>
+                        <a href="../card/card.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="../image/image.html">Image</a>
+                    </li>
+                    <li>
+                        <a href="../input/input.html">Input</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Badge documentation body -->
+
+            <div class="secondary-container-body">
+                <div class="secondary-body-head">
+                    <h1>Badge</h1>
+                    <p>
+                        Badges can be used to denote info of some kind to the user.
+                        You can implement badges in the following ways.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Badge on Avatars</h3>
+                    <div class="container-av">
+                        <div class="badge">
+                            <img src="../../assets/avatar/avatar_1.svg" alt="avatar std" class="avatar-lg avatar-round spacer" />
+                            <div class="online"></div>
+                        </div>
+                        <div class="badge">
+                            <img src="../../assets/avatar/avatar_2.svg" alt="avatar std" class="avatar avatar-round spacer" />
+                            <div class="offline"></div>
+                        </div>
+                        <div class="badge">
+                            <img src="../../assets/avatar/avatar_3.svg" alt="avatar std" class="avatar-md avatar-round spacer"/>
+                            <div class="idle"></div>
+                        </div>
+                        <div class="badge">
+                            <img src="../../assets/avatar/avatar_4.svg" alt="avatar std" class="avatar-sm avatar-round spacer"/>
+                            <div class="dnd"></div>
+                        </div>
+                    </div>
+                    <p>
+                        Use badges along with avatars to indicate if someone is active, busy idle etc.
+                        To use badges, add class <code>badge</code> to your container element followed by a div 
+                        with class name <code>online</code>, <code>offline</code>, <code>idle</code> or <code>dnd</code> to indicate the type.
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--Online%2520Badge--%253E%2520%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522.%252Flink-to-asset.svg%2522%2520class%253D%2522avatar-lg%2520avatar-round%2520spacer%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522online%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--Offline%2520Badge--%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522.%252Flink-to-asset.svg%2522%2520class%253D%2522avatar-lg%2520avatar-round%2520spacer%2522%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522offline%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Badge on Icons</h3>
+                    <div class="container-av">
+                        <div class="badge">
+                            <img src="../../assets/badge/mail.svg" alt="avatar std" class="avatar-lg spacer" />
+                            <div class="badge-info">5</div>
+                        </div>
+                        <div class="badge">
+                            <img src="../../assets/badge/phone.svg" alt="avatar std" class="avatar-lg spacer" />
+                            <div class="badge-info">7</div>
+                        </div>
+                    </div>
+                    <p>
+                        Use badges on icons to display information. Use it on email app icons to show the number of unread mails or above a phone icon to show the number of missed calls etc. 
+                        Use class <code>badge-info</code> inside a badge class.
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522.%252Flink-to-asset.svg%2522%2520%252F%253E%2520%253Cdiv%2520class%253D%2522badge-info%2522%253E5%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="send-to-next">
+                    <div class="prev"><a href="../alert/alert.html">Back To Alerts</a></div>
+                    <div class="next"><a href="../button/button.html">Go to Buttons</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
