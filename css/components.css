@@ -5,6 +5,7 @@
 @import url('../components/badge/badge.css');
 @import url('../components/button/button.css');
 @import url('../components/card/card.css');
+@import url('../components/image/image.css');
 
 html, body {
     margin: 0;
@@ -73,6 +74,10 @@ html, body {
     border:0; 
     transform: scale(1); 
     overflow:hidden;
+}
+
+.highlight {
+    color: var(--color-highlight-orange);
 }
 
 .send-to-next {
@@ -195,9 +200,7 @@ html, body {
 
     .card-image {
         width: 100px;
-        height: 70px;
-        /* width: 30%;
-        height: 30%; */
+        height: auto;
     }
 
     .secondary-content-sample-code {
