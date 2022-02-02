@@ -27,4 +27,10 @@
     --color-button-solid-success-hover: #34a539;
     --color-button-solid-error: #d50000;
     --color-button-solid-error-hover: #da3131;
+    --color-button-icon-bg: #ff9800;
+    --color-button-fab-bg: yellowgreen;
+
+    /* Card Colors */
+    --color-card-overlay: #00000098;
+    --color-card-overlay-text-bg: #000000c5;
 }

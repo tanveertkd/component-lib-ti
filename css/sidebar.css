@@ -1,9 +1,10 @@
 .sidebar-nav {
-    display: flex;
-    /* flex: 0 0 250px; */
+    /* display: flex; */
+    flex: 0 0 250px;
+    /* position: fixed; */
     flex-direction: column;
     margin-right: 1.5rem;
-    width: 250px;
+    /* width: 250px; */
 }
 
 .sidebar-nav-header {

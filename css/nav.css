@@ -1,8 +1,10 @@
 nav {
     /* position: fixed;
     top: 1rem;
-    left: 1rem; */
-    display: flex;
+    left: 1rem;
+    /* display: flex; */
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 nav a {

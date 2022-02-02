@@ -4,20 +4,26 @@
 @import url('../components/alert/alert.css');
 @import url('../components/badge/badge.css');
 @import url('../components/button/button.css');
+@import url('../components/card/card.css');
+@import url('../components/image/image.css');
 
 html, body {
+    margin: 0;
+    padding: 0;
     background-color: var(--primary-bg);
 }
 
 .primary-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: 2rem;
 }
 
 .secondary-container {
     display: flex;
-    margin: 3rem;
+    margin: 3rem auto;
+    width: 75%;
 }
 
 .secondary-container-body {
@@ -70,6 +76,10 @@ html, body {
     overflow:hidden;
 }
 
+.highlight {
+    color: var(--color-highlight-orange);
+}
+
 .send-to-next {
     display: flex;
     justify-content: space-between;
@@ -83,6 +93,45 @@ html, body {
 
 /* Media Queries */
 
+@media screen and (max-width: 1440px) {
+    
+    .sidebar-nav {
+        flex: 0 0 150px;
+    }
+
+    .primary-container {
+        margin: 0.5rem;
+    }
+
+    .secondary-container {
+        margin: 3rem auto;
+        width: 75%;
+    }
+
+    .secondary-container-body {
+        margin: auto;
+        width: 75%;
+    }
+
+    .container-button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-button button {
+        margin: 0.5rem;
+    }
+
+    .secondary-content-sample-code iframe {
+        width: 800px; 
+        height: 250px; 
+        border: 0; 
+        transform: scale(1); 
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .primary-container {
         margin: 1rem;
@@ -94,10 +143,12 @@ html, body {
 
     .secondary-container {
         margin: 1rem;
+        width: 100%;
     }
     
     .secondary-container-body {
         margin: 0.5rem;
+        width: 90%;
     }
 
     .secondary-content {
@@ -118,6 +169,38 @@ html, body {
 
     .alert-container {
         width: 100%;
+    }
+
+    .card {
+        display: flex;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .card-img-horizontal {
+        align-items: center;
+        padding-left: 0.5;
+    }
+
+    .card-img-horizontal .card-buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-img-horizontal .card-buttons button {
+        margin-bottom: 0.25rem;
+    }
+
+    .card-img-horizontal .card-head, .card-img-horizontal .card-body {
+        margin: 0;
+        padding-bottom: 0.25rem;
+    }
+
+    .card-image {
+        width: 100px;
+        height: auto;
     }
 
     .secondary-content-sample-code {

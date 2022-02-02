@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI | Card</title>
+
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div class="primary-container">
+        <nav>
+            <a href="../../index.html">TI</a>
+        </nav>
+
+        <div class="secondary-container">
+            
+            <!-- Components navigation -->
+            <div class="sidebar-nav">
+                <div class="sidebar-nav-header">
+                    <a href="./avatar.html">Components</a>
+                </div>
+                
+                <ul class="sidebar-nav-items">
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="../alert/alert.html">Alert</a>
+                    </li>
+                    <li>
+                        <a href="../badge/badge.html">Badge</a>
+                    </li>
+                    <li>
+                        <a href="../button/button.html">Button</a>
+                    </li>
+                    <li  class="active">
+                        <a href="../card/card.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="../image/image.html">Image</a>
+                    </li>
+                    <li>
+                        <a href="../input/input.html">Input</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Badge documentation body -->
+
+            <div class="secondary-container-body">
+                <div class="secondary-body-head">
+                    <h1>Cards</h1>
+                    <p>
+                        Cards can be used to show any kind of data. They usually contain data or information about something.
+                        Implement a card in one of the following ways.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Simple Text Only Card</h3>
+                    <div class="container-av">
+                        <div class="card-container">
+                            <h3 class="card-head">Text only card</h3>
+                            <p class="card-body">This is a simple text only card. It can be used to display information
+                                about a certain topic.
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        To implement a simple card, use the class <code>container-card</code> followed by the cards elements inside the containing div.
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%253Ch3%2520class%253D%2522card-head%2522%253EText%2520only%2520card%253C%252Fh3%253E%250A%2520%2520%2509%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520simple%2520text%2520only%2520card.%2520It%2520can%2520be%2520used%2520to%2520display%2520information%2520%250A%2520%2520%2520%2520%2520%2520about%2520a%2520certain%2520topic.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Horizontal Card with Badge and Image</h3>
+                    <div class="container-av">
+                        <div class="card">
+                            <div class="card-container card-img-horizontal">
+                                <img src="../../assets/card/card-bg.png" alt="card asset" class="card-image"/>
+                                <div class="card-body-content">
+                                    <h3 class="card-head">MTB T-200</h3>
+                                    <p class="card-body">Get this amazing bicycle at our lowest price. Hurry!</p>
+                                    <p class="card-body">Rs 7999.99 <strike>Rs 12,999</strike></p>
+                                    <div class="card-buttons">
+                                        <button class="card-btn-buy">Buy Now</button>
+                                        <button class="card-btn-add">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="card-badge">SALE!</span>
+                        </div>
+                    </div>
+                    <p>
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-img-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520asset%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522card-image%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-head%2522%253EMTB%2520T-200%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Get%2520this%2520amazing%2520bicycle%2520at%2520our%2520lowest%2520price.%2520Hurry%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Rs%25207999.99%2520%253Cstrike%253ERs%252012%252C999%253C%252Fstrike%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-buy%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-add%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253ESALE%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Vertical Card with Badge and Image</h3>
+                    <div class="container-av">
+                        <div class="card">
+                            <div class="card-container card-img-vertical">
+                                <img src="../../assets/card/card-bg.png" alt="card asset" class="card-image"/>
+                                <div class="card-body-content">
+                                    <h3 class="card-head">MTB T-200</h3>
+                                    <p class="card-body">Get this amazing bicycle at our lowest price. Hurry!</p>
+                                    <p class="card-body">Rs 7999.99 <strike>Rs 12,999</strike> </p>
+                                    <div class="card-buttons">
+                                        <button class="card-btn-buy">Buy Now</button>
+                                        <button class="card-btn-add">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="card-badge">SALE!</span>
+                        </div>
+                    </div>
+                    <p>
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-img-vertical%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520asset%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522card-image%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-head%2522%253EMTB%2520T-200%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Get%2520this%2520amazing%2520bicycle%2520at%2520our%2520lowest%2520price.%2520Hurry%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Rs%25207999.99%2520%253Cstrike%253ERs%252012%252C999%253C%252Fstrike%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-buy%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-add%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253ESALE%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Card with Badge, Image and Dismiss Button</h3>
+                    <div class="container-av">
+                        <div class="card">
+                            <div class="card-container card-img-vertical">
+                                <div class="card-icn-container">
+                                    <img src="../../assets/card/card-close.svg" alt="card asset close" class="card-dismiss"/>
+                                </div>
+                                <img src="../../assets/card/card-bg.png" alt="card asset" class="card-image"/>
+                                <div class="card-body-content">
+                                    <h3 class="card-head">MTB T-200</h3>
+                                    <p class="card-body">Get this amazing bicycle at our lowest price. Hurry!</p>
+                                    <p class="card-body">Rs 7999.99 <strike>Rs 12,999</strike></p>
+                                    <div class="card-buttons">
+                                        <button class="card-btn-buy">Buy Now</button>
+                                        <button class="card-btn-add">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="card-badge">SALE!</span>
+                        </div>
+                    </div>
+                    <p>
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-img-vertical%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520asset%2520close%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-dismiss%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520asset%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522card-image%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-head%2522%253EMTB%2520T-200%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Get%2520this%2520amazing%2520bicycle%2520at%2520our%2520lowest%2520price.%2520Hurry%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Rs%25207999.99%2520%253Cstrike%253ERs%252012%252C999%253C%252Fstrike%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-buy%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-add%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253ESALE%21%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Card with Text Overlay</h3>
+                    <div class="container-av">
+                        <div class="card">
+                            <div class="card-container card-img-vertical">
+                                <div class="card-icn-container">
+                                    <img src="../../assets/card/card-close.svg" alt="card asset close" class="card-dismiss"/>
+                                </div>
+                                <img src="../../assets/card/card-bg.png" alt="card asset" class="card-image"/>
+                                <div class="card-body-content">
+                                    <h3 class="card-head">MTB T-200</h3>
+                                    <p class="card-body">Get this amazing bicycle at our lowest price. Hurry!</p>
+                                    <p class="card-body">Rs 7999.99 <strike>Rs 12,999</strike></p>
+                                    <div class="card-buttons">
+                                        <button class="card-btn-buy">Buy Now</button>
+                                        <button class="card-btn-add">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="card-overlay"> 
+                                <div>OUT OF STOCK</div> 
+                            </span>
+                        </div>
+                    </div>
+                    <p>
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-img-vertical%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-icn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520asset%2520close%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-dismiss%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520asset%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522card-image%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-head%2522%253EMTB%2520T-200%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Get%2520this%2520amazing%2520bicycle%2520at%2520our%2520lowest%2520price.%2520Hurry%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Rs%25207999.99%2520%253Cstrike%253ERs%252012%252C999%253C%252Fstrike%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-buy%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn-add%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522card-overlay%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253EOUT%2520OF%2520STOCK%253C%252Fdiv%253E%250A%2520%2520%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div class="send-to-next">
+                    <div class="prev"><a href="../button/button.html">Back To Buttons</a></div>
+                    <div class="next"><a href="../image/image.html">Go to Images</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
