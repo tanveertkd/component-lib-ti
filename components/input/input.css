@@ -52,6 +52,12 @@
 
 /* Input error */
 
+.inp-error .inp-error-message {
+    width: 71%;
+    color: var(--color-button-solid-error);
+    font-size: 0.875rem;
+}
+
 .inp-error input[type=text] {
     border: 1px solid var(--color-button-solid-error);
 }
