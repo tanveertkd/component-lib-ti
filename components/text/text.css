@@ -1,0 +1,45 @@
+/* Headings */
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+
+/* Paragraphs */
+.paragraph {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.paragraph-md {
+    font-size: 1.2rem;
+}
+
+.paragraph-lg {
+    font-size: 1.4rem;
+}
+
+/* Text Alignments */
+
+.text-container {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: start;
+}
+
+.text-right {
+    text-align: end;
+}
+
+/* Gray text */
+.text-grey {
+    color: var(--color-text-lighter-grey);
+}
