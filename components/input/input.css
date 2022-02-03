@@ -1,0 +1,67 @@
+/* Input simple */
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.input-container label {
+    display: block;
+    width: 71%;
+    margin-bottom: 0.5rem;
+}
+
+.input-container input[type=text] {
+    line-height: 2rem;
+    width: 70%;
+    font-size: 0.875rem;
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+    border: 1px solid var(--color-hover-grey);
+    outline: none;
+}
+
+.input-container textarea {
+    width: 70%;
+    outline: none;
+}
+
+.input-container input:focus {
+    border: 1px solid var(--color-highlight-orange);
+}
+
+.input-container textarea:focus {
+    border: 1px solid var(--color-highlight-orange);
+}
+
+/* Input Success */
+
+.inp-success input[type=text] {
+    border: 1px solid var(--color-button-solid-success);
+}
+
+/* Input Warning */
+
+.inp-warning input[type=text] {
+    border: 1px solid var(--color-button-icon-bg);
+}
+
+/* Input error */
+
+.inp-error input[type=text] {
+    border: 1px solid var(--color-button-solid-error);
+}
+
+/* Radio and Check buttons */
+
+.inp-radio {
+    padding: 0.5rem;
+}
+
+.checkbox {
+    padding: 0.5rem;
+}

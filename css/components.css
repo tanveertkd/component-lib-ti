@@ -6,6 +6,7 @@
 @import url('../components/button/button.css');
 @import url('../components/card/card.css');
 @import url('../components/image/image.css');
+@import url('../components/input/input.css');
 
 html, body {
     margin: 0;
@@ -60,6 +61,16 @@ html, body {
 
 .alert-container {
     width: 50%;
+}
+
+.radio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .secondary-content-sample-code {
@@ -261,6 +272,18 @@ html, body {
 
     .container-button button {
         margin: 0.5rem;
+    }
+
+    .radio-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkbox-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .secondary-content-sample-code {
