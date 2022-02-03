@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List | TI</title>
+
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div class="primary-container">
+        <nav>
+            <a href="../../index.html">TI</a>
+        </nav>
+
+        <div class="secondary-container">
+            
+            <!-- Components navigation -->
+            <div class="sidebar-nav">
+                <div class="sidebar-nav-header">
+                    <a href="./avatar.html">Components</a>
+                </div>
+                
+                <ul class="sidebar-nav-items">
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="../alert/alert.html">Alert</a>
+                    </li>
+                    <li>
+                        <a href="../badge/badge.html">Badge</a>
+                    </li>
+                    <li>
+                        <a href="../button/button.html">Button</a>
+                    </li>
+                    <li>
+                        <a href="../card/card.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="../image/image.html">Image</a>
+                    </li>
+                    <li>
+                        <a href="../input/input.html">Input</a>
+                    </li>
+                    <li>
+                        <a href="../text/text.html">Text</a>
+                    </li>
+                    <li class="active">
+                        <a href="../list/list.html">List</a>
+                    </li>
+                    <li>
+                        <a href="../navigation/navigation.html">Navigation</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- List documentation body -->
+
+            <div class="secondary-container-body">
+                <div class="secondary-body-head">
+                    <h1>Lists</h1>
+                    <p>
+                        Use lists to showcase information in a neat and predefined list form.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Spaced List</h3>
+                    <div class="container-av">
+                        <div>
+                            <ul class="list">
+                                <li class="list-head">This is the list heading</li>
+                                <hr>
+                                <li>This is a list item</li>
+                                <li>This is a list item</li>
+                                <li>This is a list item</li>
+                                <li>This is a list item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Spaced lists can at times have spaces between the list items. Add the class <code>list-spaced</code> to create a spaced list.
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-head%2522%253EThis%2520is%2520the%2520list%2520heading%253C%252Fli%253E%250A%2520%2520%253Chr%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%253C%252Ful%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Stacked List</h3>
+                    <div class="container-av">
+                        <div>
+                            <ul class="list stacked">
+                                <li class="list-head">This is the list heading</li>
+                                <hr>
+                                <li>This is a list item</li>
+                                <li>This is a list item</li>
+                                <li>This is a list item</li>
+                                <li>This is a list item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Stacked lists don't usually have any margins between its items, like in the case of notifications. 
+                        Add the class <code>stacked</code> to create a stacked list.
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520stacked%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-head%2522%253EThis%2520is%2520the%2520list%2520heading%253C%252Fli%253E%250A%2520%2520%253Chr%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%253C%252Ful%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div class="secondary-content">
+                    <h3>Nested List</h3>
+                    <div class="container-av">
+                        <div>
+                            <ul class="list stacked">
+                                <li class="list-head">This is the list heading</li>
+                                <hr>
+                                <li>This is a list item</li>
+                                <li class="list-nested-collapsable">This is a list item</li>
+                                <ul class="list-nested">
+                                    <li>Nested Item</li>
+                                    <li>Nested Item</li>
+                                </ul>
+                                <li>This is a list item</li>
+                                <li>This is a list item</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        Nested lists can contain other nested lists that expand on click. 
+                        Please refer to the code snippet below for full usage information.
+                    </p>
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520stacked%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-head%2522%253EThis%2520is%2520the%2520list%2520heading%253C%252Fli%253E%250A%2520%2520%253Chr%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522list-nested-collapsable%2522%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list-nested%2522%253E%250A%2520%2520%2520%2520%2509%253Cli%253ENested%2520Item%253C%252Fli%253E%250A%2520%2520%2520%2520%2509%253Cli%253ENested%2520Item%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%2520%2520%253Cli%253EThis%2520is%2520a%2520list%2520item%253C%252Fli%253E%250A%253C%252Ful%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="send-to-next">
+                    <div class="prev"><a href="../text/text.html">Back To Text Utils</a></div>
+                    <div class="next"><a href="../navigation/navigation.html">Go to Navigation</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
