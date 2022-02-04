@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal | TI</title>
+
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div class="primary-container">
+        <nav>
+            <a href="../../index.html">TI</a>
+        </nav>
+
+        <div class="secondary-container">
+            
+            <!-- Components navigation -->
+            <div class="sidebar-nav">
+                <div class="sidebar-nav-header">
+                    <a href="./avatar.html">Components</a>
+                </div>
+                
+                <ul class="sidebar-nav-items">
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="../alert/alert.html">Alert</a>
+                    </li>
+                    <li>
+                        <a href="../badge/badge.html">Badge</a>
+                    </li>
+                    <li>
+                        <a href="../button/button.html">Button</a>
+                    </li>
+                    <li>
+                        <a href="../card/card.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="../image/image.html">Image</a>
+                    </li>
+                    <li>
+                        <a href="../input/input.html">Input</a>
+                    </li>
+                    <li>
+                        <a href="../text/text.html">Text</a>
+                    </li>
+                    <li>
+                        <a href="../list/list.html">List</a>
+                    </li>
+                    <li>
+                        <a href="../navigation/navigation.html">Navigation</a>
+                    </li>
+                    <li class="active">
+                        <a href="../modal/modal.html">Modal</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Modal documentation body -->
+
+            <div class="secondary-container-body">
+                <div class="secondary-body-head">
+                    <h1>Modal</h1>
+                    <p>
+                        Modals show up on the page like pop ups. They are shown on top of everything else
+                        on the page. They are usually used with some kind of confirmation is needed.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Modal</h3>
+                    <div class="container-av">
+                        <div class="modal">
+                            <div class="modal-dismiss">
+                                <img src="../../assets/card/card-close.svg" alt="close btn" />
+                            </div>
+                            <div class="modal-body">
+                                <img src="../../assets/card/card-bg.png" alt="modal asset" class="modal-body-asset" />
+                                <p class="modal-body-text">
+                                    Exciting offers on bicycles only for today!
+                                </p>
+                                <div class="modal-body-btn">
+                                    <button class="modal-btn btn-primary" type="submit">Go to Offers</button>
+                                    <button class="modal-btn btn-secondary" type="submit">Stay Here</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        Please refer to the code snippet below for full usage information.
+                        You can see a <span class="highlight">demo</span> of how modals work by clicking the button below.
+                    </p>
+                    
+                    <div class="secondary-content-btn-container">
+                        <button class="secondary-content-demo-btn" type="submit">Demo</button>
+                    </div>
+
+                    <div class="modal-sample">
+                        <div class="modal">
+                            <div class="modal-dismiss">
+                                <img class="modal-dismiss-btn" src="../../assets/card/card-close.svg" alt="close btn" />
+                            </div>
+                            <div class="modal-body">
+                                <img src="../../assets/card/card-bg.png" alt="modal asset" class="modal-body-asset" />
+                                <p class="modal-body-text">
+                                    Exciting offers on bicycles only for today!
+                                </p>
+                                <div class="modal-body-btn">
+                                    <button class="modal-btn btn-primary" type="submit">Go to Offers</button>
+                                    <button class="modal-btn btn-secondary btn-secondary-demo" type="submit">Stay Here</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>                   
+
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-dismiss%2522%253E%250A%2520%2520%2509%253Cimg%2520src%253D%2522.%252Flink-to-asset.svg%2522%2520alt%253D%2522close%2520btn%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2509%253Cimg%2520src%253D%2522.%252Flink-to-asset%252Fsvg%2522%2520alt%253D%2522modal%2520asset%2522%2520class%253D%2522modal-body-asset%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522modal-body-text%2522%253E%250A%2520%2520%2520%2520%2509Exciting%2520offers%2520on%2520bicycles%2520only%2520for%2520today%21%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522modal-btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253EGo%2520to%2520Offers%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522modal-btn%2520btn-secondary%2522%2520type%253D%2522submit%2522%253EStay%2520Here%253C%252Fbutton%253E%250A%2520%2520%2509%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="send-to-next">
+                    <div class="prev"><a href="../navigation/navigation.html">Back To Navigation</a></div>
+                    <div class="next"><a href="../rating/rating.html">Go to Rating</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./modal.js"></script>
+</body>
+</html>
