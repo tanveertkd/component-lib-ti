@@ -34,4 +34,7 @@
     /* Card Colors */
     --color-card-overlay: #00000098;
     --color-card-overlay-text-bg: #000000c5;
+
+    /* Modal Background */
+    --color-modal-transparent-bg: #00000080;
 }
