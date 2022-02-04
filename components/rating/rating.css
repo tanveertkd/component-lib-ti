@@ -1,5 +1,5 @@
 .rating-container input[type=checkbox]{
-    appearance: none;
+    display: none;
 }
 
 .rating-icn{
@@ -13,6 +13,6 @@
 /* Media */
 @media screen and (max-width: 600px) {
     .rating-container input[type=checkbox]{
-        appearance: none;
+        display: none;
     }
 }

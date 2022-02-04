@@ -145,7 +145,7 @@ html, body {
 /* Rating */
 
 .rating-container-display input[type=checkbox]{
-    appearance: none;
+    display: none;
 }
 
 .rating-form {
@@ -403,6 +403,6 @@ html, body {
 
     /* Rating */
     .rating-container-display input[type=checkbox]{
-        appearance: none;
+        display: none;
     }
 }
