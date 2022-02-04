@@ -48,6 +48,10 @@
     color: var(--color-hover-light-grey);
 }
 
+.modal-body-btn .btn-secondary {
+    color: var(--color-grey);
+}
+
 .modal-body-btn .btn-primary:hover, .modal-body-btn .btn-secondary:hover {
     box-shadow: 5px 5px 5px var(--color-offline);
 }
