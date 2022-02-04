@@ -400,4 +400,9 @@ html, body {
         width: 100%;
         max-width: 250px;
     }
+
+    /* Rating */
+    .rating-container-display input[type=checkbox]{
+        appearance: none;
+    }
 }
