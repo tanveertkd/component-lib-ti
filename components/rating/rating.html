@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating | TI</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div class="primary-container">
+        <nav>
+            <a href="../../index.html">TI</a>
+        </nav>
+
+        <div class="secondary-container">
+            
+            <!-- Components navigation -->
+            <div class="sidebar-nav">
+                <div class="sidebar-nav-header">
+                    <a href="./avatar.html">Components</a>
+                </div>
+                
+                <ul class="sidebar-nav-items">
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="../alert/alert.html">Alert</a>
+                    </li>
+                    <li>
+                        <a href="../badge/badge.html">Badge</a>
+                    </li>
+                    <li>
+                        <a href="../button/button.html">Button</a>
+                    </li>
+                    <li>
+                        <a href="../card/card.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="../image/image.html">Image</a>
+                    </li>
+                    <li>
+                        <a href="../input/input.html">Input</a>
+                    </li>
+                    <li>
+                        <a href="../text/text.html">Text</a>
+                    </li>
+                    <li>
+                        <a href="../list/list.html">List</a>
+                    </li>
+                    <li>
+                        <a href="../navigation/navigation.html">Navigation</a>
+                    </li>
+                    <li>
+                        <a href="../modal/modal.html">Modal</a>
+                    </li>
+                    <li class="active">
+                        <a href="../rating/rating.html">Rating</a>
+                    </li>
+                    <li>
+                        <a href="../snackbar/snackbar.html">Snackbar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Snackbar documentation body -->
+
+            <div class="secondary-container-body">
+                <div class="secondary-body-head">
+                    <h1>Rating</h1>
+                    <p>
+                        Ratings bars are used to indicate rate a product or anyother object.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Rating</h3>
+                    <div class="container-av">
+                        <form class="rating-form-display">
+                            <div class="rating-container-display">
+                                <label>
+                                  <input type="checkbox" class="rating" checked />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                                <label>
+                                  <input type="checkbox" class="rating" checked />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                                <label>
+                                  <input type="checkbox" class="rating" checked />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                                <label>
+                                  <input type="checkbox" class="rating" checked />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                                <label>
+                                  <input type="checkbox" class="rating" />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <p>
+                        Please refer to the code snippet below for full usage information.
+                        You can see how ratings work using the <span class="highlight">demo</span> below.
+                    </p>
+
+                    <div class="rating-sample">
+                        <form class="rating-form">
+                            <div class="rating-container">
+                                <label>
+                                  <input type="checkbox" class="rating" value="1" name="radio" />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                                <label>
+                                  <input type="checkbox" class="rating" value="2" name="radio" />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                                <label>
+                                  <input type="checkbox" class="rating" value="3" name="radio" />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                                <label>
+                                  <input type="checkbox" class="rating" value="4" name="radio" />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                                <label>
+                                  <input type="checkbox" class="rating" value="5" name="radio" />
+                                  <i class="fas fa-star rating-icn"></i>
+                                </label>
+                            </div>
+                
+                            <button class="btn btn-default-outlined" type="submit">Rate</button>
+                            <div class="show-rating-given"></div>
+                        </form>
+                    </div>                   
+
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520class%253D%2522rating-form%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522rating-container%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating%2522%2520value%253D%25221%2522%2520name%253D%2522radio%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating%2522%2520value%253D%25222%2522%2520name%253D%2522radio%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating%2522%2520value%253D%25223%2522%2520name%253D%2522radio%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating%2522%2520value%253D%25224%2522%2520name%253D%2522radio%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520class%253D%2522rating%2522%2520value%253D%25225%2522%2520name%253D%2522radio%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2520rating-icn%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-default-outlined%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520Rate%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520class%253D%2522show-rating-given%2522%253E%253C%252Fdiv%253E%250A%253C%252Fform%253E%250A"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="send-to-next">
+                    <div class="prev"><a href="../modal/modal.html">Back To Modal</a></div>
+                    <div class="next"><a href="../rating/rating.html">Go to Rating</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./rating.js"></script>
+</body>
+</html>

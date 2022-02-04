@@ -11,6 +11,8 @@
 @import url('../components/list/list.css');
 @import url('../components/navigation/navigation.css');
 @import url('../components/modal/modal.css');
+@import url('../components/rating/rating.css');
+@import url('../components/snackbar/snackbar.css');
 
 html, body {
     margin: 0;
@@ -102,6 +104,7 @@ html, body {
 
 .secondary-content-demo-btn {
     padding: 0.5rem 1rem;
+    margin: auto 1rem;
     background-color: transparent;
     border: 1px solid var(--color-hover-grey);
     border-radius: 0.2rem;
@@ -131,6 +134,37 @@ html, body {
     top:0;
     left:0;
     background-color: var(--color-modal-transparent-bg);
+}
+
+/* Snackbar */
+.snackbar-sample {
+    display: flex;
+    justify-content: center;
+}
+
+/* Rating */
+
+.rating-container-display input[type=checkbox]{
+    appearance: none;
+}
+
+.rating-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-sample .rating-form button {
+    padding: 0.5rem 1.5rem;
+    margin: 1rem auto;
+}
+
+.rating-sample .rating-form button:hover {
+    padding: 0.5rem 1.5rem;
+    margin: 1rem auto;
+    background-color: var(--color-grey);
+    color: var(--primary-bg);
 }
 
 .highlight {
@@ -344,12 +378,26 @@ html, body {
         overflow: hidden;
     }
 
-    /* Modal */
+    /* Modal and after*/
     .secondary-content-btn-container {
         margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondary-content-btn-container .secondary-content-demo-btn {
+        width: 70%;
+        margin: 0.5rem auto;
     }
 
     .send-to-next {
         padding-top: 1rem;
+    }
+
+    /* Snackbar */
+    .snackbar-sample .snackbar-body {
+        width: 100%;
+        max-width: 250px;
     }
 }
