@@ -1,0 +1,32 @@
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    background: var(--color-hover-light-grey);
+    border-radius: 0.5rem;
+    width: 80%;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--color-highlight-orange);
+    cursor: pointer;
+    border-radius: 50%;
+}
+  
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: var(--color-highlight-orange);
+    cursor: pointer;
+}
+
+.slier-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
