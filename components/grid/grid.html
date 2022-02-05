@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid | TI</title>
+
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div class="primary-container">
+        <nav>
+            <a href="../../index.html">TI</a>
+        </nav>
+
+        <div class="secondary-container">
+            
+            <!-- Components navigation -->
+            <div class="sidebar-nav">
+                <div class="sidebar-nav-header">
+                    <a href="./avatar.html">Components</a>
+                </div>
+                
+                <ul class="sidebar-nav-items">
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="../alert/alert.html">Alert</a>
+                    </li>
+                    <li>
+                        <a href="../badge/badge.html">Badge</a>
+                    </li>
+                    <li>
+                        <a href="../button/button.html">Button</a>
+                    </li>
+                    <li>
+                        <a href="../card/card.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="../image/image.html">Image</a>
+                    </li>
+                    <li>
+                        <a href="../input/input.html">Input</a>
+                    </li>
+                    <li>
+                        <a href="../text/text.html">Text</a>
+                    </li>
+                    <li>
+                        <a href="../list/list.html">List</a>
+                    </li>
+                    <li>
+                        <a href="../navigation/navigation.html">Navigation</a>
+                    </li>
+                    <li>
+                        <a href="../modal/modal.html">Modal</a>
+                    </li>
+                    <li>
+                        <a href="../rating/rating.html">Rating</a>
+                    </li>
+                    <li>
+                        <a href="../snackbar/snackbar.html">Snackbar</a>
+                    </li>
+                    <li class="active">
+                        <a href="../grid/grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="../slider/slider.html">Slider</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Grid documentation body -->
+
+            <div class="secondary-container-body">
+                <div class="secondary-body-head">
+                    <h1>Grid</h1>
+                    <p>
+                        Use grids to organise or structure your webpages in a grid-like structure.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>50-50 Grid</h3>
+                    <div class="container-av">
+                        <div class="grid-container">
+                            <div class="grid-50-50">
+                                <div class="grid-item grid-item-left">
+                                    <img src="../../assets/card/card-bg.png" alt="grid asset" class="grid-image-asset"/>
+                                </div>
+                                <div class="grid-item grid-item-context">
+                                    <p>Exciting offers on bicycles!</p>
+                                    <button class="btn-grid">Go to Offers</button>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <p>
+                        A 50-50 Grid splits it's content's into two equal halves. 
+                        Please refer to the code snippet below for full usage information.
+                    </p>                   
+
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-50-50%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522grid%2520asset%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522grid-image-asset%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2520grid-item-context%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EExciting%2520offers%2520on%2520bicycles%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-grid%2522%253EGo%2520to%2520Offers%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>3 Item Grid</h3>
+                    <div class="container-av">
+                        <div class="grid-container grid-3">
+                            <div class="grid-col-3">
+                                <div class="grid-item grid-item-left">
+                                    <img src="../../assets/card/card-bg.png" alt="grid asset" class="grid-image-asset"/>
+                                </div>
+                                <div class="grid-item grid-item-context">
+                                    <p>Exciting offers on bicycles!</p>
+                                    <button class="btn-grid">Go to Offers</button>
+                                </div>
+                            </div>
+                            <div class="grid-col-3">
+                                <div class="grid-item grid-item-left">
+                                    <img src="../../assets/card/card-bg.png" alt="grid asset" class="grid-image-asset"/>
+                                </div>
+                                <div class="grid-item grid-item-context">
+                                    <p>Exciting offers on bicycles!</p>
+                                    <button class="btn-grid">Go to Offers</button>
+                                </div>
+                            </div>
+                            <div class="grid-col-3">
+                                <div class="grid-item grid-item-left">
+                                    <img src="../../assets/card/card-bg.png" alt="grid asset" class="grid-image-asset"/>
+                                </div>
+                                <div class="grid-item grid-item-context">
+                                    <p>Exciting offers on bicycles!</p>
+                                    <button class="btn-grid">Go to Offers</button>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <p>
+                        Use class <code>grid-3</code> along with the parent div to implement a 3 column grid. 
+                        Please refer to the code snippet below for full usage information.
+                    </p>                   
+
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-container%2520grid-3%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-col-3%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522grid%2520asset%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522grid-image-asset%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2520grid-item-context%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EExciting%2520offers%2520on%2520bicycles%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-grid%2522%253EGo%2520to%2520Offers%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-col-3%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522grid%2520asset%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522grid-image-asset%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2520grid-item-context%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EExciting%2520offers%2520on%2520bicycles%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-grid%2522%253EGo%2520to%2520Offers%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-col-3%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Flink-to-asset.svg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522grid%2520asset%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522grid-image-asset%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2520grid-item-context%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EExciting%2520offers%2520on%2520bicycles%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-grid%2522%253EGo%2520to%2520Offers%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="send-to-next">
+                    <div class="prev"><a href="../snackbar/snackbar.html">Back To Snackbars</a></div>
+                    <div class="next"><a href="../slider/slider.html">Go to Sliders</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
