@@ -1,8 +1,7 @@
 nav {
-    /* position: fixed;
-    top: 1rem;
-    left: 1rem;
-    /* display: flex; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 1rem;
     padding-left: 1rem;
 }
