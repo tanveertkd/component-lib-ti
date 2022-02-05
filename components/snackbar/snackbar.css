@@ -1,0 +1,88 @@
+.snackbar-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-grey);
+    color: var(--primary-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+.snackbar-body-text {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.snackbar-action-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snackbar-action-container button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--primary-bg);
+    border: none;
+    padding: 0.5rem;
+}
+
+.snackbar-action-container button:hover {
+    background-color: var(--color-hover-grey);
+}
+
+.snackbar-btn-action-1:hover {
+    border-radius: 0.2rem;
+}
+
+.snackbar-action-container .snackbar-btn-action-1 {
+    color: var(--color-highlight-orange);
+}
+
+.snackbar-action-container .snackbar-btn-action-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* Demo */
+
+.snackbar-hide {
+    display: none;
+}
+
+.snackbar-baseline {
+    display: flex;
+    position: fixed;
+    bottom: 1%;
+}
+
+.snackbar-leading {
+    display: flex;
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+}
+
+.snackbar-stacked {
+    position: fixed;
+    bottom: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.snackbar-stacked .snackbar-action-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.btn-desc {
+    font-size: 1rem;
+    font-weight: lighter;
+}

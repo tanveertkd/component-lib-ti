@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar | TI</title>
+
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+    <link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div class="primary-container">
+        <nav>
+            <a href="../../index.html">TI</a>
+        </nav>
+
+        <div class="secondary-container">
+            
+            <!-- Components navigation -->
+            <div class="sidebar-nav">
+                <div class="sidebar-nav-header">
+                    <a href="./avatar.html">Components</a>
+                </div>
+                
+                <ul class="sidebar-nav-items">
+                    <li>
+                        <a href="../avatar/avatar.html">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="../alert/alert.html">Alert</a>
+                    </li>
+                    <li>
+                        <a href="../badge/badge.html">Badge</a>
+                    </li>
+                    <li>
+                        <a href="../button/button.html">Button</a>
+                    </li>
+                    <li>
+                        <a href="../card/card.html">Card</a>
+                    </li>
+                    <li>
+                        <a href="../image/image.html">Image</a>
+                    </li>
+                    <li>
+                        <a href="../input/input.html">Input</a>
+                    </li>
+                    <li>
+                        <a href="../text/text.html">Text</a>
+                    </li>
+                    <li>
+                        <a href="../list/list.html">List</a>
+                    </li>
+                    <li>
+                        <a href="../navigation/navigation.html">Navigation</a>
+                    </li>
+                    <li>
+                        <a href="../modal/modal.html">Modal</a>
+                    </li>
+                    <li>
+                        <a href="../rating/rating.html">Rating</a>
+                    </li>
+                    <li class="active">
+                        <a href="../snackbar/snackbar.html">Snackbar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Snackbar documentation body -->
+
+            <div class="secondary-container-body">
+                <div class="secondary-body-head">
+                    <h1>Snackbar</h1>
+                    <p>
+                        Snackbars can be used as pop ups showing some kind of brief information.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="secondary-content">
+                    <h3>Snackbar</h3>
+                    <div class="container-av">
+                        <div class="snackbar-body"> 
+                            <span class="snackbar-body-text">Can't send photo. Retry after 5 seconds.</span> 
+                            <span class="snackbar-action-container">
+                                <button class="snackbar-btn-action-1" type="submit">Retry</button>
+                                <button class="snackbar-btn-action-2" type="submit"> 
+                                    <img src="../../assets/snackbar/dismiss.svg" alt="toast dismiss" /> 
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <p>
+                        Please refer to the code snippet below for full usage information.
+                        You can see a <span class="highlight">demo</span> of how modals work by clicking the button below.
+                    </p>
+                    
+                    <div class="secondary-content-btn-container">
+                        <button class="secondary-content-demo-btn btn-baseline">Baseline</button>
+                        <button class="secondary-content-demo-btn btn-leading">Leading</button>
+                        <button class="secondary-content-demo-btn btn-stacked">Stacked</button>
+                    </div>
+
+                    <div class="snackbar-sample">
+                        <div class="snackbar-body snackbar-demo snackbar-hide"> 
+                            <span class="snackbar-body-text">Can't send photo. Retry after 5 seconds.</span> 
+                            <span class="snackbar-action-container">
+                                <button class="snackbar-btn-action-1" type="submit">Retry</button>
+                                <button class="snackbar-btn-action-2" type="submit">
+                                    <img src="../../assets/snackbar/dismiss.svg" 
+                                        alt="toast dismiss"
+                                        class="demo-close" />
+                                </button>
+                            </span>
+                        </div>
+                    </div>                   
+
+                    <div class="secondary-content-sample-code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar-body%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522snackbar-body-text%2522%253E%250A%2520%2520%2520%2520Can%27t%2520send%2520photo.%2520Retry%2520after%25205%2520seconds.%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522snackbar-action-container%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-btn-action-1%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520Retry%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522snackbar-btn-action-2%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Flink-to-asset.svg%2522%2520alt%253D%2522toast%2520dismiss%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="send-to-next">
+                    <div class="prev"><a href="../rating/rating.html">Back To Rating</a></div>
+                    <div class="next"><a href="../grid/grid.html">Go to Grid</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./snackbar.js"></script>
+</body>
+</html>
