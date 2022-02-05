@@ -13,6 +13,8 @@
 @import url('../components/modal/modal.css');
 @import url('../components/rating/rating.css');
 @import url('../components/snackbar/snackbar.css');
+@import url('../components/grid/grid.css');
+@import url('../components/slider/slider.css');
 
 html, body {
     margin: 0;
@@ -165,6 +167,40 @@ html, body {
     margin: 1rem auto;
     background-color: var(--color-grey);
     color: var(--primary-bg);
+}
+
+/* Grid */
+
+.grid-50-50 .grid-image-asset {
+    width: 100%;
+    max-width: 350px;
+}
+
+.grid-50-50 {
+    box-shadow: 5px 5px 5px var(--color-hover-light-grey);
+}
+
+.grid-item-left {
+    background-color: var(--color-hover-light-grey);
+    padding: 1rem;
+}
+
+.grid-col-3 .grid-image-asset {
+    width: 100%;
+    max-width: 250px;
+}
+
+.grid-col-3 {
+    box-shadow: 5px 5px 5px var(--color-hover-light-grey);
+}
+
+/* Slider */
+.slider-output-div {
+    display: flex;
+}
+
+.slider-output-div .slider-value {
+    margin: auto 0.25rem;
 }
 
 .highlight {

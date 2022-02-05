@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TI | Image</title>
+    <title>Slider | TI</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../css/nav.css">
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/components.css">
@@ -40,7 +41,7 @@
                     <li>
                         <a href="../card/card.html">Card</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="../image/image.html">Image</a>
                     </li>
                     <li>
@@ -67,36 +68,46 @@
                     <li>
                         <a href="../grid/grid.html">Grid</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="../slider/slider.html">Slider</a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Image documentation body -->
+            <!-- Slider documentation body -->
 
             <div class="secondary-container-body">
                 <div class="secondary-body-head">
-                    <h1>Images</h1>
+                    <h1>Slider</h1>
                     <p>
-                        Images with TI are responsive by nature. You can use images in one of the following ways.
+                        Sliders generally let you select values within a certain range.
                     </p>
                 </div>
 
                 <hr>
 
                 <div class="secondary-content">
-                    <h3>Round Image</h3>
+                    <h3>Sliders</h3>
                     <div class="container-av">
-                        <img src="../../assets/image/image.jpg" alt="image asset" class="img-round"/>
+                        <div class="slider-container">
+                            <label for="slider"><i class="fas fa-volume-up"></i>
+                                <input type="range" min="1" max="100" value="25" class="slider"/>
+                            </label>
+                            <div class="slider-output-div">
+                                <p>Slider value: </p> 
+                                <p class="slider-value"></p>
+                            </div>
+                        </div>
                     </div>
+
                     <p>
-                        Round images can be implemented by simply adding <code>img-round</code> to the image element.
+                        Sliders can be used to adjust values or select values within a range.
                         Please refer to the code snippet below for full usage information.
-                    </p>
+                    </p>                   
+
                     <div class="secondary-content-sample-code">
                         <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522.%252Flink-to-asset.jpg%2522%2520alt%253D%2522image%2520asset%2522%2520class%253D%2522img-round%2522%252F%253E"
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522slider-container%2522%253E%250A%2520%2520%253Clabel%2520for%253D%2522slider%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-volume-up%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25221%2522%2520max%253D%2522100%2522%2520value%253D%252225%2522%2520class%253D%2522slider%2522%2520%252F%253E%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
@@ -104,33 +115,14 @@
 
                 <hr>
 
-                <div class="secondary-content">
-                    <h3>Responsive Image</h3>
-                    <div class="container-av">
-                        <img src="../../assets/image/image.jpg" alt="image asset" class="img-responsive"/>
-                    </div>
-                    <p>
-                        Responsive images resize with the window/parent size. They can be implemented by simply adding <code>img-responsive</code> to the image element.
-                        <span class="highlight">Resize the window to see an example.</span> 
-                        Please refer to the code snippet below for full usage information.
-                    </p>
-                    <div class="secondary-content-sample-code">
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522.%252Flink-to-asset.jpg%2522%2520alt%253D%2522image%2520asset%2522%2520class%253D%2522img-responsive%2522%252F%253E"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </div>
-
-                <hr>
-                
                 <div class="send-to-next">
-                    <div class="prev"><a href="../card/card.html">Back To Cards</a></div>
-                    <div class="next"><a href="../input/input.html">Go to Inputs</a></div>
+                    <div class="prev"><a href="../grid/grid.html">Back To Grids</a></div>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <script type="text/javascript" src="./slider.js"></script>
 </body>
 </html>
