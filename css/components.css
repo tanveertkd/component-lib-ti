@@ -37,7 +37,7 @@ html, body {
 
 .nav-menu-icn {
     display: none;
-    position: fixed;
+    position: sticky;
     z-index: 2;
     top: 1.5rem;
     right: 2rem;
@@ -326,7 +326,7 @@ html, body {
     .nav-menu {
         display: flex;
     }
-
+    
     .nav-menu-icn {
         display: flex;
     }
