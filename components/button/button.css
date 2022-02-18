@@ -9,6 +9,7 @@
 }
 
 .btn:hover {
+    cursor: pointer;
     box-shadow: 5px 5px 5px var(--color-hover-light-grey);
 }
 
@@ -60,7 +61,7 @@
 }
 
 .btn-default-outlined:hover {
-    border: none;
+    border: 1px solid var(--color-button-default);
     background-color: var(--color-button-default);
 }
 
@@ -71,7 +72,7 @@
 }
 
 .btn-primary-outlined:hover {
-    border: none;
+    border: 1px solid var(--color-button-solid-primary);
     background-color: var(--color-button-solid-primary);
     color: var(--primary-bg);
 }
@@ -83,7 +84,7 @@
 }
 
 .btn-secondary-outlined:hover {
-    border: none;
+    border: 1px solid var(--color-button-solid-secondary);
     background-color: var(--color-button-solid-secondary);
     color: var(--primary-bg);
 }
@@ -95,7 +96,7 @@
 }
 
 .btn-success-outlined:hover {
-    border: none;
+    border: 1px solid var(--color-button-solid-success);
     background-color: var(--color-button-solid-success);
     color: var(--primary-bg);
 }
@@ -107,7 +108,7 @@
 }
 
 .btn-error-outlined:hover {
-    border: none;
+    border: 1px solid var(--color-button-solid-error);
     background-color: var(--color-button-solid-error);
     color: var(--primary-bg);
 }

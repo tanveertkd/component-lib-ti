@@ -1,25 +1,10 @@
 @import url('./typography.css');
 @import url('./colors.css');
-@import url('../components/avatar/avatar.css');
-@import url('../components/alert/alert.css');
-@import url('../components/badge/badge.css');
-@import url('../components/button/button.css');
-@import url('../components/card/card.css');
-@import url('../components/image/image.css');
-@import url('../components/input/input.css');
-@import url('../components/text/text.css');
-@import url('../components/list/list.css');
-@import url('../components/navigation/navigation.css');
-@import url('../components/modal/modal.css');
-@import url('../components/rating/rating.css');
-@import url('../components/snackbar/snackbar.css');
-@import url('../components/grid/grid.css');
-@import url('../components/slider/slider.css');
+@import url('./reset.css');
+@import url('./all.css');
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--primary-bg);
+:root {
+    --box-shadow-5px-grey-light: 5px 5px 5px var(--color-hover-light-grey);
 }
 
 .primary-container {
@@ -29,70 +14,22 @@ html, body {
     margin: 2rem;
 }
 
-/* Navigation */
-
-.nav-menu {
-    display: none;
-}
-
-.nav-menu-icn {
-    display: none;
-    position: sticky;
-    z-index: 2;
-    top: 1.5rem;
-    right: 2rem;
-    border: none;
-    color: var(--color-grey);
-    background: transparent;
-    cursor: pointer;
-}
-
-.nav-icn-menu {
-    padding: 0.125rem;
-}
-
-.nav-icn-close {
-    display: none;
-    color: var(--primary-bg);
-    padding: 0.125rem;
-}
-
-.nav-menu-list {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background: var(--color-grey);
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-    margin: 0;
-}
-
-.nav-menu-item {
-    margin: 0.5rem auto;
-}
-
-.nav-menu-link {
-    color: var(--primary-bg);
-    font-size: 1.2rem;
-}
-
-.nav-menu-active {
-    transform: translateY(0);
-}
-
-/* Navigation Ends */
-
 .secondary-container {
     display: flex;
     margin: 3rem auto;
     width: 75%;
 }
+
+/* Sidebar Nav */
+
+.sidebar-nav {
+    position: -webkit-sticky; /*For Safari*/
+    position: sticky;
+    top: 2rem;
+    align-self: flex-start; 
+}
+
+/* Sidebar Nav Ends */
 
 .secondary-container-body {
     margin: auto 1.5rem;
@@ -124,6 +61,9 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    border: 1px solid var(--color-hover-light-grey);
+    border-radius: 0.2rem;
+    padding: 2rem;
 }
 
 .alert-container {
@@ -169,13 +109,14 @@ html, body {
     background-color: transparent;
     border: 1px solid var(--color-hover-grey);
     border-radius: 0.2rem;
-    box-shadow: 5px 5px 5px var(--color-hover-light-grey);
+    box-shadow: var(--box-shadow-5px-grey-light);
     width: 25%;
     text-transform: uppercase;
     color: var(--color-grey);
 }
 
 .secondary-content-demo-btn:hover {
+    cursor: pointer;
     background-color: var(--color-hover-grey);
     color: var(--color-hover-light-grey);
 }
@@ -236,7 +177,7 @@ html, body {
 }
 
 .grid-50-50 {
-    box-shadow: 5px 5px 5px var(--color-hover-light-grey);
+    box-shadow: var(--box-shadow-5px-grey-light);
 }
 
 .grid-item-left {
@@ -250,12 +191,24 @@ html, body {
 }
 
 .grid-col-3 {
-    box-shadow: 5px 5px 5px var(--color-hover-light-grey);
+    box-shadow: var(--box-shadow-5px-grey-light);
 }
 
 /* Slider */
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .slider-output-div {
     display: flex;
+}
+
+.slider-output-div p {
+    margin: 0;
 }
 
 .slider-output-div .slider-value {
@@ -323,20 +276,12 @@ html, body {
         margin: 1rem;
     }
 
-    .nav-menu {
-        display: flex;
-    }
-    
-    .nav-menu-icn {
-        display: flex;
-    }
-
     .sidebar-nav{
         display: none;
     }
 
     .secondary-container {
-        margin: 1rem;
+        margin: 0;
         width: 100%;
     }
     
@@ -434,7 +379,9 @@ html, body {
     }
 
     .secondary-container {
-        margin: 1rem;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
     }
     
     .secondary-container-body {
