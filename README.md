@@ -10,7 +10,7 @@ All of the individual component's are customizable as well. Just add your own st
 
 ## Usage
 To start using TI just add the 'components.css' file to you html file like so:  
-`<link rel="stylesheet" href="https://ti-ui.netlify.app/css/components.css" />`  
+`<link rel="stylesheet" href="https://ti-ui.netlify.app/css/all.css" />`  
   
   Detailed instructions on using each component along with all the necessary code snippets are available over on the [documentation](https://ti-ui.netlify.app) site.
 
